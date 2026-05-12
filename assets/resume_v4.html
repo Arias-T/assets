@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page {
+            size: A4;
+            margin: 12mm;
+        }
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            color: #333;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            font-size: 10pt;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 20pt;
+            color: #2c3e50;
+        }
+        .contact-info {
+            margin-top: 5px;
+            font-size: 9.5pt;
+            color: #555;
+        }
+        .section {
+            margin-bottom: 15px;
+        }
+        .section-title {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #2c3e50;
+            border-left: 5px solid #2c3e50;
+            padding-left: 10px;
+            margin-bottom: 8px;
+            background-color: #f4f7f9;
+        }
+        .item {
+            margin-bottom: 10px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 2px;
+            color: #1a2a3a;
+        }
+        .item-sub {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 4px;
+            font-size: 9pt;
+        }
+        ul {
+            margin: 4px 0;
+            padding-left: 18px;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+        .highlight {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>[王子安]</h1>
+        <div class="contact-info">
+            邮箱：[wangzian66666@Gmail.com] | 现居：[GuiLin]
+        </div>
+        <div class="contact-info">
+            <strong>求职意向：NetDevOps 工程师 / 全栈开发工程师</strong>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">教育背景</div>
+        <div class="item">
+            <div class="item-header">
+                <span>南通职业大学</span>
+                <span>2022.9-2025.6</span>
+            </div>
+             <div class="item-sub">计算机应用技术（大数据方向）</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">核心技能</div>
+        <div>
+            <strong>自动化与后端：</strong> 精通 <span class="highlight">Python</span> 自动化运维及 <span class="highlight">SQLAlchemy</span> ORM；熟练使用 <span class="highlight">Node.js (Koa2)</span> 异步架构；具备 Shell 脚本编写能力。<br>
+            <strong>数据工程：</strong> 擅长非结构化数据 (SRT/JSON) 转换、ETL 预处理及正则表达式应用；熟悉 MySQL 事务管理与性能优化。<br>
+            <strong>全栈交互：</strong> 掌握 <span class="highlight">PWA (Service Worker)</span> 离线化技术；精通 <span class="highlight">WebSocket</span> 实时通信与 <span class="highlight">Webhook</span> 预警集成。<br>
+            <strong>网络运维：</strong> 熟悉 TCP/IP、路由交换基础；掌握 v2ray/x-ui 与 GitHub Actions CI/CD 流转。<br>
+            <strong>素质标签：</strong> 深度 Xmind 用户，具备知识管理习惯。
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">项目经历</div>
+        
+        <div class="item">
+            <div class="item-header">
+                <span>金融衍生品 (0DTE/Greeks) 自动化监控与预警系统</span>
+                <span>2025.09 - 2026.03</span>
+            </div>
+            <ul>
+                <li><strong>实时计算：</strong> 基于 Selenium 自动化采集 0DTE 期权行情，实时计算 Greeks (Delta/Gamma) 及持仓量异常。</li>
+                <li><strong>事件驱动预警：</strong> 集成 <span class="highlight">Discord Webhook</span> 链路，实现风险阈值触发下的秒级推送，构建无人值守自动化闭环。</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>环境监测全栈数据处理与可视化平台</span>
+                <span>2025.10 - 至今</span>
+            </div>
+            <ul>
+                <li><strong>全栈链路：</strong> 实现从异构数据爬取、后端 API 支撑到大屏的全流程闭环。</li>
+                <li><strong>持久化优化：</strong> 利用 <span class="highlight">SQLAlchemy</span> 实现空间数据入库，通过连接池与事务处理确保数据存储的稳健性。</li>
+                <li><strong>实时推送：</strong> 基于 <span class="highlight">WebSocket</span> 协议实现服务端主动推送，确保水质监测指标的秒级更新。</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>沉浸式英语学习自动化工具链 (PWA & ETL)</span>
+                <span>个人项目</span>
+            </div>
+            <ul>
+                <li><strong>离线化架构：</strong> 基于 <span class="highlight">Service Worker (PWA)</span> 实现缓存优先策略，支持弱网/无网环境下的流畅交互。</li>
+                <li><strong>自动化 ETL：</strong> 编写 Python 脚本实现 SRT 原始字幕到结构化 JSON 的精准清洗与时间戳匹配。</li>
+                <li><strong>工程化同步：</strong> 联动 Shell 与 Python 脚本扫描目录，自动生成资源映射配置，实现“配置即代码”的静态资源管理。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">自我评价</div>
+        <ul>
+            <li><strong>工具化思维：</strong> 擅长通过脚本和自动化手段解决重复性工作痛点，追求系统高可用与业务闭环。</li>
+        </ul>
+    </div>
+</body>
+</html>
